@@ -1,6 +1,7 @@
 import React from 'react'
 import { Hidden, makeStyles } from '@material-ui/core'
-import { BrowserRouter, Route } from 'react-router-dom'
+// import { BrowserRouter, Route } from 'react-router-dom'
+import { HashRouter as Router, Route } from 'react-router-dom'
 import Navbar from './Navbar'
 import Cajon from './Cajon'
 import Main from '../pages/Main'
@@ -15,7 +16,6 @@ const estilos = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
-    padding: theme.spacing(3),
   },
 }))
 
@@ -28,7 +28,7 @@ const Contenedor = () => {
   }
 
   return (
-    <BrowserRouter>
+    <Router>
       <div className={classes.root}>
         <Navbar accionAbrir={accionAbrir} />
         <Hidden smDown>
@@ -44,7 +44,7 @@ const Contenedor = () => {
           <Route path="/projects" exact component={Projects} />
         </div>
       </div>
-    </BrowserRouter>
+    </Router>
   )
 }
 

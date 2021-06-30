@@ -44,7 +44,10 @@ const Contact = () => {
     <div>
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success">
-          Copiado al portapapeles!
+          <FormattedMessage
+            id="contact.successCopy"
+            defaultMessage="Copiado al portapapeles!"
+          />
         </Alert>
       </Snackbar>
       <List>

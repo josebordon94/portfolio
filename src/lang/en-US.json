@@ -10,6 +10,7 @@
     "main.presentation2": "I also have knowledge in PHP frameworks and relational MySQL databases, deployed in Apache servers (LAMP stack). Both stacks have their advantages and disadvantages depending on the project to develop.",
     "main.contactTitle": "Contact information",
     "main.pdfCV": "CV in PDF",
+    "contact.successCopy": "Copied to clipboard!",
 
     "formation.title": "Education",
     "formation.studiesSubTitle" : "Studies",
@@ -52,7 +53,7 @@
     "projects.sga-description-intro" : "The applications have the following funcionalities:",
     "projects.sga-description-list": "<li>Login with four different users type</li> <li>Full headquarters, classrooms, laboratories, suers, resources and reservation CRUD</li> <li>Classroom schedule distribution</li>  <li>Statics recopilation with comparative graphs and reports</li> <li>Internal inbox</li> <li>E-mails sending</li>  <li>Active database, providing backup and resotartion</li>  <li>Help section</li>",
     "projects.sga-app-link": "You can access to a this application preview <a>in this link</a>. You will be able to see classes schedules of an education institution and filter classrooms and laboratories whitout a registered user.",
-    "projects.sga-mono-link": "You can also read my monograph of this finarl proyect <a>here</a>.",
+    "projects.sga-mono-link": "You can also read my monograph of this final proyect <a>here</a>.",
     "projects.vanilla-title": "Vanilla JS little projects",
     "projects.vanilla-content1": "I consider the best way to learn a new programming language is just exploring and having fun. So, when i got started in Javascript world, i developed some little websites to practice DOM manipulation and events, such as classic tic-tac-toe and hangman game.",
     "projects.vanilla-content2": "Both games use HTML5 canvas to render the game state. Tic-tac-toe allows playinh with someone else in the same device. Hangman game selects a random word of a JSON file, so you easily can edit this file and put your own words for playing with somebody else.",

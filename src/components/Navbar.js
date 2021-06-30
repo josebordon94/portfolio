@@ -8,6 +8,7 @@ import {
   Menu,
   MenuItem,
   Divider,
+  Hidden,
 } from '@material-ui/core'
 
 import React, { useContext } from 'react'
@@ -71,7 +72,7 @@ const Navbar = (props) => {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" className={classes.title}>
-          José Bordón
+          <Hidden smDown>José Bordón</Hidden>
         </Typography>
         <Button
           color="inherit"
@@ -79,7 +80,10 @@ const Navbar = (props) => {
           endIcon={<KeyboardArrowDownOutlinedIcon />}
           onClick={showMenu}
         >
-          <FormattedMessage id="languageName" default="Seleccione un idioma" />
+          <FormattedMessage
+            id="languageName"
+            defaultMessage="Seleccione idioma"
+          />
         </Button>
         <Menu
           id="simple-menu"

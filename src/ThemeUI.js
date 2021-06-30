@@ -5,12 +5,12 @@ const theme = createMuiTheme({
     fontFamily: ['Varela', 'sans-serif'],
     h1: {
       fontSize: '3rem',
-      marginBottom: '1.3rem',
     },
     h2: {
       fontSize: '2rem',
       textAlign: 'left',
-      marginBottom: '10px',
+      marginBottom: '0.4em',
+      marginTop: '0.8em',
     },
   },
   palette: {
