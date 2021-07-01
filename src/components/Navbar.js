@@ -41,6 +41,8 @@ const useStyles = makeStyles((theme) => ({
   },
   menu: {
     width: '125px',
+    display: 'flex',
+    justifyContent: 'center',
   },
 }))
 
@@ -72,7 +74,11 @@ const Navbar = (props) => {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" className={classes.title}>
-          <Hidden smDown>José Bordón</Hidden>
+          <Hidden xsDown>José Bordón</Hidden>
+          <Hidden smDown>
+            {' '}
+            - <FormattedMessage id="portfolio" defaultMessage="Portafolio" />
+          </Hidden>
         </Typography>
         <Button
           color="inherit"
@@ -80,10 +86,7 @@ const Navbar = (props) => {
           endIcon={<KeyboardArrowDownOutlinedIcon />}
           onClick={showMenu}
         >
-          <FormattedMessage
-            id="languageName"
-            defaultMessage="Seleccione idioma"
-          />
+          <FormattedMessage id="languageName" defaultMessage="ESPAÑOL" />
         </Button>
         <Menu
           id="simple-menu"
@@ -99,7 +102,7 @@ const Navbar = (props) => {
               setAnchorEl(null)
             }}
           >
-            <Button>Español</Button>
+            Español
           </MenuItem>
           <Divider />
           <MenuItem
@@ -109,7 +112,7 @@ const Navbar = (props) => {
               setAnchorEl(null)
             }}
           >
-            <Button>English</Button>
+            English
           </MenuItem>
         </Menu>
         <IconButton
@@ -119,13 +122,15 @@ const Navbar = (props) => {
         >
           <GitHubIcon />
         </IconButton>
-        <IconButton
-          aria-label="delete"
-          color="inherit"
-          href="https://www.linkedin.com/in/josebordon94/"
-        >
-          <LinkedInIcon />
-        </IconButton>
+        <Hidden xsDown>
+          <IconButton
+            aria-label="delete"
+            color="inherit"
+            href="https://www.linkedin.com/in/josebordon94/"
+          >
+            <LinkedInIcon />
+          </IconButton>
+        </Hidden>
       </Toolbar>
     </AppBar>
   )

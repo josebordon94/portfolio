@@ -1,12 +1,14 @@
 {
     "languageName" : "Español",
 
+    "portfolio": "Portafolio",
+
     "nav.main": "Sobre mí",
     "nav.formation": "Formación",
     "nav.projects": "Proyectos",
 
     "main.title": "Sobre mí",
-    "main.presentation": "Me llamo José Bordón. Soy Licenciado en Sistemas de Información, egresado de la Universidad Nacional del Nordeste. Vivo en Corrientes, Argentina. Por el momento me desempeño como desarrollador web free-lancer. Me interesa tanto el back como el end, sobretodo el desarrollo en el stack MERN (MongoDB + Express + React + NodeJS). Este mismo portafolio está codificado en ReactJS, utilizando el framework MaterialUI.",
+    "main.presentation": "Me llamo José Bordón. Soy Licenciado en Sistemas de Información, egresado de la Universidad Nacional del Nordeste. Vivo en Corrientes, Argentina. Por el momento me desempeño como desarrollador web freelancer. Mi perfil es fullstack, sobretodo el desarrollo en el stack MERN (MongoDB + Express + React + NodeJS). Este mismo portafolio está codificado en ReactJS, utilizando el framework MaterialUI.",
     "main.presentation2": "También dispongo de conocimientos en frameworks de PHP con bases de datos MySQL en servidores Apache (stack LAMP). Ambos stacks tienen sus ventajas y desventajas en función del proyecto que se quiere realizar.",
     "main.contactTitle": "Información de contacto",
     "main.pdfCV": "Currículum Vitae en PDF",

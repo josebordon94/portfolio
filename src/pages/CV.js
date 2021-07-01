@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(3),
     color: theme.palette.text.secondary,
   },
 
@@ -237,7 +237,7 @@ const CV = () => {
           />
         </Typography>
         <ul className={classes.list}>
-          <li>Control de versiones GIT</li>
+          <li>Git</li>
           <li>R Studio</li>
         </ul>
         <Typography

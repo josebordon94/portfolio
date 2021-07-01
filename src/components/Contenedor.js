@@ -35,7 +35,12 @@ const Contenedor = () => {
           <Cajon variant="permanent" open={true} />
         </Hidden>
         <Hidden mdUp>
-          <Cajon variant="temporary" open={abrir} onClose={accionAbrir} />
+          <Cajon
+            variant="temporary"
+            open={abrir}
+            onClose={accionAbrir}
+            abrir={accionAbrir}
+          />
         </Hidden>
         <div className={classes.content}>
           <div className={classes.toolbar}></div>

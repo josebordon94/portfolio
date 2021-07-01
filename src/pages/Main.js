@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(3),
     color: theme.palette.text.secondary,
   },
   sectionSubTitle: {
@@ -25,7 +25,6 @@ const useStyles = makeStyles((theme) => ({
   },
   mern: {
     width: '100%',
-    maxWidth: '800px',
   },
   lamp: {
     width: '100%',

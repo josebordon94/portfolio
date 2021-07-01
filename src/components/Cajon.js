@@ -20,6 +20,7 @@ const Cajon = (props) => {
   return (
     <div>
       <Drawer
+        onClick={props.abrir}
         className={classes.drawer}
         classes={{ paper: classes.drawerPaper }}
         anchor="left"

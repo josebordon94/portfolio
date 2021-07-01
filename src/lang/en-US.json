@@ -1,6 +1,7 @@
 {
     "languageName" : "English",
 
+    "portfolio": "Portfolio",
     "nav.main": "About me",
     "nav.formation": "Education",
     "nav.projects": "Projects",
@@ -18,7 +19,7 @@
     "formation.study1-description" : "Bachelor's degree granted by Facultad de Ciencias Exactas, Naturales y Agrimensura. Universidad Nacional del Nordeste (UNNE)",
     "formation.study2-title": " Programmer Analyst (2013-2017).",
     "formation.study2-description": "Diploma granted by Facultad de Ciencias Exactas, Naturales y Agrimensura. Universidad Nacional del Nordeste (UNNE)",
-    "formation.study3-title": "Polimodal Education Highschool, Economy and Business Management. (2008-2011).",
+    "formation.study3-title": "Polimodal Education Highschool with specialization in Economy and Business Management. (2008-2011). ",
     "formation.study3-description": "Instituto CREA, Universidad Católica de Salta",
     "formation.coursesSubTitle": "Courses taken",
     "formation.course1-title": "NodeJS Development.",
@@ -49,11 +50,11 @@
 
     "projects.title" : "Projects",
     "projects.sga-title": "Sistema de Gestión de Aulas (Classroom Management System)",
-    "projects.sga-intro": "This project was my final work to obtain my Information Systems degree. This application consists of a full web reservation system, to manage schedules and classrooms of a education institution. The software was implemented in LAMP stack, using Codeigniter as PHP framework over a MySQL relational database.",
+    "projects.sga-intro": "SGA (Sistema de Gestión de Aulas) was my final degree project. This application consists of a full web reservation system, to manage schedules and classrooms of a education institution. The software was implemented in LAMP stack, using Codeigniter as PHP framework over a MySQL relational database.",
     "projects.sga-description-intro" : "The applications have the following funcionalities:",
     "projects.sga-description-list": "<li>Login with four different users type</li> <li>Full headquarters, classrooms, laboratories, suers, resources and reservation CRUD</li> <li>Classroom schedule distribution</li>  <li>Statics recopilation with comparative graphs and reports</li> <li>Internal inbox</li> <li>E-mails sending</li>  <li>Active database, providing backup and resotartion</li>  <li>Help section</li>",
-    "projects.sga-app-link": "You can access to a this application preview <a>in this link</a>. You will be able to see classes schedules of an education institution and filter classrooms and laboratories whitout a registered user.",
-    "projects.sga-mono-link": "You can also read my monograph of this final proyect <a>here</a>.",
+    "projects.sga-app-link": "To have a preview access to the application, you can click on <a>this link</a>. Once there, you will be able to see class schedules of an education institution and to filter classrooms and laboratories without a registered user.",
+    "projects.sga-mono-link": "You can also read my final degree project monograph <a>here</a>.",
     "projects.vanilla-title": "Vanilla JS little projects",
     "projects.vanilla-content1": "I consider the best way to learn a new programming language is just exploring and having fun. So, when i got started in Javascript world, i developed some little websites to practice DOM manipulation and events, such as classic tic-tac-toe and hangman game.",
     "projects.vanilla-content2": "Both games use HTML5 canvas to render the game state. Tic-tac-toe allows playinh with someone else in the same device. Hangman game selects a random word of a JSON file, so you easily can edit this file and put your own words for playing with somebody else.",

@@ -16,7 +16,7 @@ const Lista = () => {
   return (
     <div>
       <List>
-        <ListItem button component={Link} to="/">
+        <ListItem button component={Link} to="/" replace>
           <ListItemIcon>
             <AccountBoxIcon />
           </ListItemIcon>
@@ -24,7 +24,7 @@ const Lista = () => {
             <FormattedMessage id="nav.main" defaultMessage="Sobre mí" />
           </ListItemText>
         </ListItem>
-        <ListItem button component={Link} to="/cv">
+        <ListItem button component={Link} to="/cv" replace>
           <ListItemIcon>
             <SchoolIcon />
           </ListItemIcon>
@@ -32,7 +32,7 @@ const Lista = () => {
             <FormattedMessage id="nav.formation" defaultMessage="Formación" />
           </ListItemText>
         </ListItem>
-        <ListItem button component={Link} to="/projects">
+        <ListItem button component={Link} to="/projects" replace>
           <ListItemIcon>
             <WorkIcon />
           </ListItemIcon>

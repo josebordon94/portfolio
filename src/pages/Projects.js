@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Paper, Typography, Box } from '@material-ui/core/'
+import { Paper, Typography, Box, Grid } from '@material-ui/core/'
 import LinkIcon from '@material-ui/icons/Link'
 import { FormattedMessage } from 'react-intl'
 
@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(3),
     color: theme.palette.text.secondary,
   },
 
@@ -19,6 +19,10 @@ const useStyles = makeStyles((theme) => ({
   },
   fullPicture: {
     maxWidth: '100%',
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginBottom: '1.3em',
   },
   shadowPic: {
     boxShadow:
@@ -82,28 +86,38 @@ const Projects = () => {
               datos relacional MySQL."
           />
         </Typography>
-        <Box boxShadow={3} bgcolor="background.paper" marginY="1rem">
-          <img
-            src="img/sga1.jpg"
-            alt="Sistema de gestion de aulas"
-            className={classes.fullPicture}
-          />
-        </Box>
-        <Typography variant="body1" align="justify">
-          <FormattedMessage
-            id="projects.sga-description-intro"
-            defaultMessage="Entre sus funcionalidades, el sistema cuenta con:"
-          />
-        </Typography>
-        <ul className={classes.list}>
-          <FormattedMessage
-            id="projects.sga-description-list"
-            defaultMessage="Lista"
-            values={{
-              li: (word) => <li>{word}</li>,
-            }}
-          />
-        </ul>
+        <Grid
+          container
+          spacing={1}
+          style={{ display: 'flex', alignItems: 'center' }}
+        >
+          <Grid item xs={12} xl={6}>
+            <Box boxShadow={3} bgcolor="background.paper" marginY="1rem">
+              <img
+                src="img/sga1.jpg"
+                alt="Sistema de gestion de aulas"
+                className={classes.fullPicture}
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} xl={6}>
+            <Typography variant="body1" align="justify">
+              <FormattedMessage
+                id="projects.sga-description-intro"
+                defaultMessage="Entre sus funcionalidades, el sistema cuenta con:"
+              />
+            </Typography>
+            <ul className={classes.list}>
+              <FormattedMessage
+                id="projects.sga-description-list"
+                defaultMessage="Lista"
+                values={{
+                  li: (word) => <li>{word}</li>,
+                }}
+              />
+            </ul>
+          </Grid>
+        </Grid>
         <Typography variant="body1" align="justify">
           <FormattedMessage
             id="projects.sga-app-link"
@@ -172,7 +186,7 @@ const Projects = () => {
           />
         </Typography>
         <a
-          href="https://josebordon94.github.io/Javascript-Tic-Tac-Toe/"
+          href="https://github.com/josebordon94/Javascript-Tic-Tac-Toe"
           className={classes.inlineLink}
         >
           <LinkIcon />
