@@ -317,7 +317,7 @@ const Projects = () => {
         <ul className={classes.list}>
           <FormattedMessage
             id="projects.budget-list"
-            defaultMessage="Lista"
+            defaultMessage="<li>Registro de usuario e inicio de sesión con JSON Web Token</li><li>Resúmen de cuenta con balance total de dinero del usuario</li>  <li> Formulario e historial de operaciones con concepto, fecha y tipo de operación</li> <li>CRUD completo de operaciones de usuario</li>    <li>Sección de ayuda</li>"
             values={{
               li: (word) => <li>{word}</li>,
             }}
