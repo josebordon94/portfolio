@@ -2,7 +2,7 @@ import { createMuiTheme } from '@material-ui/core/styles'
 import { deepOrange, grey, blueGrey } from '@material-ui/core/colors'
 const theme = createMuiTheme({
   typography: {
-    fontFamily: ['Varela', 'sans-serif'],
+    fontFamily: ['Mulish', 'sans-serif'],
     h1: {
       fontSize: '3rem',
     },

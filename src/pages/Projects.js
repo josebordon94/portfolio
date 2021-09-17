@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Paper, Typography, Box, Grid } from '@material-ui/core/'
+import { Paper, Typography, Box, Grid, Fade } from '@material-ui/core/'
 import LinkIcon from '@material-ui/icons/Link'
 import { FormattedMessage } from 'react-intl'
 
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
 const Projects = () => {
   const classes = useStyles()
   return (
-    <div>
+    <Fade in={true} timeout={600}>
       <Paper className={classes.paper}>
         <Typography
           variant="h1"
@@ -65,6 +65,84 @@ const Projects = () => {
         >
           <FormattedMessage id="projects.title" defaultMessage="Proyectos" />
         </Typography>
+        {/* Social Network */}
+        <Typography
+          variant="h2"
+          color="initial"
+          className={classes.sectionSubTitle}
+        >
+          <FormattedMessage
+            id="projects.sn-title"
+            defaultMessage="Social network (red social)"
+          />
+        </Typography>
+        <Typography variant="body1" align="justify">
+          <FormattedMessage id="projects.sn-intro" defaultMessage="ddd." />
+        </Typography>
+        <Grid
+          container
+          spacing={1}
+          style={{ display: 'flex', alignItems: 'center' }}
+        >
+          <Grid item xs={12} md={4} xl={4}>
+            <Box boxShadow={3} bgcolor="background.paper" marginY="1rem">
+              <img
+                src="img/sn-profile.jpg"
+                alt="Sistema de gestion de aulas"
+                className={classes.fullPicture}
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={4} xl={4} boxShadow={3}>
+            <Box boxShadow={3} bgcolor="background.paper" marginY="1rem">
+              <img
+                src="img/sn-post.jpg"
+                alt="Sistema de gestion de aulas"
+                className={classes.fullPicture}
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={4} xl={4}>
+            <Box boxShadow={3} bgcolor="background.paper" marginY="1rem">
+              <img
+                src="img/sn-new.jpg"
+                alt="Sistema de gestion de aulas"
+                className={classes.fullPicture}
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant="body1" align="justify">
+              <FormattedMessage
+                id="projects.sn-description-intro"
+                defaultMessage="Entre sus funcionalidades, el sistema cuenta con:"
+              />
+            </Typography>
+            <ul className={classes.list}>
+              <FormattedMessage
+                id="projects.sn-description-list"
+                defaultMessage="Lista"
+                values={{
+                  li: (word) => <li>{word}</li>,
+                }}
+              />
+            </ul>
+            <Typography variant="body1" align="justify">
+              <FormattedMessage
+                id="projects.sn-prelink"
+                defaultMessage="Disponible en Github:"
+              />
+            </Typography>
+            <a
+              href="https://github.com/josebordon94/social-network"
+              className={classes.inlineLink}
+            >
+              <LinkIcon />
+              <span>Social network</span>
+            </a>
+          </Grid>
+        </Grid>
+        {/* SGA */}
         <Typography
           variant="h2"
           color="initial"
@@ -312,7 +390,7 @@ const Projects = () => {
           <span>E-commerce API Rest</span>
         </a>
       </Paper>
-    </div>
+    </Fade>
   )
 }
 

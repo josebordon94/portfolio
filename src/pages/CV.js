@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Paper, Typography } from '@material-ui/core/'
+import { Paper, Typography, Fade } from '@material-ui/core/'
 import { FormattedMessage } from 'react-intl'
 
 const useStyles = makeStyles((theme) => ({
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 const CV = () => {
   const classes = useStyles()
   return (
-    <div>
+    <Fade in={true} timeout={600}>
       <Paper className={classes.paper}>
         <Typography
           variant="h1"
@@ -133,6 +133,34 @@ const CV = () => {
               (2008-2011).
             </span>{' '}
             Instituto de Enseñanza Privada CREA (I.S. 42). 2011.
+          </li>
+          <li>
+            <span className={classes.negrita}>
+              <FormattedMessage
+                id="formation.course4-title"
+                default="Seminario de Formación de Líderes"
+              />{' '}
+              (2008-2011).
+            </span>{' '}
+            Agencia de Aprendizaje a lo Largo de la Vida, Codo a codo 4.0 2021
+          </li>
+          <li>
+            <span className={classes.negrita}>
+              <FormattedMessage
+                id="formation.course5-title"
+                default="Seminario de Formación de Líderes"
+              />{' '}
+            </span>{' '}
+            Alkemy Labs. 2021
+          </li>
+          <li>
+            <span className={classes.negrita}>
+              <FormattedMessage
+                id="formation.course6-title"
+                default="Seminario de Formación de Líderes"
+              />{' '}
+            </span>{' '}
+            Agencia de Aprendizaje a lo Largo de la Vida, Codo a codo 4.0 2021
           </li>
         </ul>
         <Typography
@@ -291,7 +319,7 @@ const CV = () => {
           </li>
         </ul>
       </Paper>
-    </div>
+    </Fade>
   )
 }
 

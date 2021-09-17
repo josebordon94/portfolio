@@ -39,10 +39,12 @@ const useStyles = makeStyles((theme) => ({
     },
     zIndex: theme.zIndex.drawer + 1,
   },
-  menu: {
-    width: '125px',
-    display: 'flex',
-    justifyContent: 'center',
+  languagesMenu: {},
+  flagIcon: {
+    width: '25px',
+    heigth: '25px',
+    marginRight: '7px',
+    marginTop: '1.5px',
   },
 }))
 
@@ -96,12 +98,13 @@ const Navbar = (props) => {
           onClose={handleClose}
         >
           <MenuItem
-            className={classes.menu}
+            className={classes.languagesMenu}
             onClick={() => {
               language.setLanguage('es-AR')
               setAnchorEl(null)
             }}
           >
+            <img src="img/icons/spain.svg" className={classes.flagIcon} />
             Español
           </MenuItem>
           <Divider />
@@ -112,7 +115,7 @@ const Navbar = (props) => {
               setAnchorEl(null)
             }}
           >
-            English
+            <img src="img/icons/uk.svg" className={classes.flagIcon} /> English
           </MenuItem>
         </Menu>
         <IconButton

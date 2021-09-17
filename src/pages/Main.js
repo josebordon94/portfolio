@@ -1,12 +1,12 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Paper, Grid, Typography } from '@material-ui/core/'
+import { Paper, Grid, Typography, Fade } from '@material-ui/core/'
 import Contact from '../components/Contact'
 import { FormattedMessage } from 'react-intl'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexFade: 1,
   },
   paper: {
     padding: theme.spacing(3),
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 const Main = () => {
   const classes = useStyles()
   return (
-    <div>
+    <Fade in={true} timeout={600}>
       <Paper className={classes.paper}>
         <Typography
           variant="h1"
@@ -49,6 +49,10 @@ const Main = () => {
         >
           <FormattedMessage id="main.title" defaultMessage="Sobre mí" />
         </Typography>
+        <Grid container spacing={2}>
+          <Grid item></Grid>
+          <Grid item></Grid>
+        </Grid>
         <Typography
           variant="body1"
           align="justify"
@@ -94,7 +98,7 @@ const Main = () => {
           </Grid>
         </Grid>
       </Paper>
-    </div>
+    </Fade>
   )
 }
 
