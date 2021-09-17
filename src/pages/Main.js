@@ -60,13 +60,7 @@ const Main = () => {
         >
           <FormattedMessage
             id="main.presentation"
-            defaultMessage="              Me llamo José Bordón. Soy Licenciado en Sistemas de Información,
-              egresado de la Universidad Nacional del Nordeste. Vivo en
-              Corrientes, Argentina. Por el momento me desempeño como
-              desarrollador web free-lancer. Me interesa tanto el back como el
-              end, sobretodo el desarrollo en el stack MERN (MongoDB + Express +
-              React + NodeJS). Este mismo portafolio está codificado en ReactJS,
-              utilizando el framework MaterialUI."
+            defaultMessage="Me llamo José Bordón. Soy Licenciado en Sistemas de Información, egresado de la Universidad Nacional del Nordeste. Vivo en Corrientes, Argentina. Mi perfil es fullstack, sobretodo el desarrollo en el stack MERN (MongoDB + Express + React + NodeJS). Este mismo portafolio está codificado en ReactJS, utilizando el framework MaterialUI."
           />
         </Typography>
         <Grid container spacing={0}>

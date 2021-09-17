@@ -77,7 +77,10 @@ const Projects = () => {
           />
         </Typography>
         <Typography variant="body1" align="justify">
-          <FormattedMessage id="projects.sn-intro" defaultMessage="ddd." />
+          <FormattedMessage
+            id="projects.sn-intro"
+            defaultMessage="Este proyecto se corresponde con una red social inspirada en Instagram, desarrollada en React y dispone de una APIREST trabajando en una base de datos MongoDB."
+          />
         </Typography>
         <Grid
           container
@@ -115,13 +118,13 @@ const Projects = () => {
             <Typography variant="body1" align="justify">
               <FormattedMessage
                 id="projects.sn-description-intro"
-                defaultMessage="Entre sus funcionalidades, el sistema cuenta con:"
+                defaultMessage="La aplicación permite a los usuarios:"
               />
             </Typography>
             <ul className={classes.list}>
               <FormattedMessage
                 id="projects.sn-description-list"
-                defaultMessage="Lista"
+                defaultMessage="<li>Registrarse e iniciar sesión con verificación JSON Web Token</li> <li>Crear publicaciones con fotos</li> <li>Dar like a publicaciones propias y de otros usuarios</li>  <li>Acceder a perfiles de usuario</li> <li>Comentar publicaciones</li>"
                 values={{
                   li: (word) => <li>{word}</li>,
                 }}
@@ -188,7 +191,7 @@ const Projects = () => {
             <ul className={classes.list}>
               <FormattedMessage
                 id="projects.sga-description-list"
-                defaultMessage="Lista"
+                defaultMessage="<li>Inicio de sesión para cuatro usuarios distintos</li> <li>CRUD completo de sedes, aulas, laboratorios, usuarios, recursos y reservas</li> <li>Distribución de aulas y recursos de clase con fechas y horarios</li>  <li>Recopilación de estadísticas sobre las reservas, con informes y gráficos comparativos</li> <li>Sistema de mensajería interna</li> <li>Envío de emails</li>  <li>Base de datos con triggers, mecanismos de copia de seguridad y restauración</li>  <li>Sección de ayuda</li>"
                 values={{
                   li: (word) => <li>{word}</li>,
                 }}
@@ -199,7 +202,7 @@ const Projects = () => {
         <Typography variant="body1" align="justify">
           <FormattedMessage
             id="projects.sga-app-link"
-            defaultMessage="Lista"
+            defaultMessage="Puede acceder a una previsualización del mismo mediante <a>este enlace</a>. Podrá ver los horarios de clase de una institución ficticia y filtrar las aulas/laboratorios sin necesidad de un usuario registrado."
             values={{
               a: (word) => (
                 <a
@@ -214,7 +217,7 @@ const Projects = () => {
           <br />
           <FormattedMessage
             id="projects.sga-mono-link"
-            defaultMessage="Lista"
+            defaultMessage="Si lo desea, también puede leer la monografía correspondiente a mi trabajo final <a>aquí</a>."
             values={{
               a: (word) => (
                 <a href="documents/Monografia_SGA.pdf" className={classes.link}>
@@ -233,7 +236,7 @@ const Projects = () => {
         <Typography variant="body1" align="justify">
           <FormattedMessage
             id="projects.vanilla-content1"
-            defaultMessage="              Considero que la mejor forma de aprender un lenguaje de
+            defaultMessage="Considero que la mejor forma de aprender un lenguaje de
               programación es simplemente explorando y, más que nada, jugando.
               Así que al introducirme en el mundo Javascript, para practicar
               manipulación del DOM y manejo de eventos realicé pequeñas páginas
