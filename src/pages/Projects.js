@@ -244,11 +244,7 @@ const Projects = () => {
               ahorcado."
           />
         </Typography>
-        <img
-          src="img/games.jpg"
-          alt="Sistema de gestion de aulas"
-          className={classes.shadowPic}
-        />
+        <img src="img/games.jpg" alt="Games" className={classes.shadowPic} />
         <Typography variant="body1" align="justify">
           <FormattedMessage
             id="projects.vanilla-content2"
@@ -329,7 +325,7 @@ const Projects = () => {
         </ul>
         <img
           src="img/pb.jpg"
-          alt="Sistema de gestion de aulas"
+          alt="Personal budget"
           className={classes.fullPicture}
         />
         <Typography variant="body1" align="justify">
@@ -366,7 +362,7 @@ const Projects = () => {
         <ul className={classes.list}>
           <FormattedMessage
             id="projects.ecommerce-list"
-            defaultMessage="Lista"
+            defaultMessage="<li>Registro de usuario e inicio de sesión con JSON Web Token</li><li>Resúmen de cuenta con balance total de dinero del usuario</li>  <li> Formulario e historial de operaciones con concepto, fecha y tipo de operación</li> <li>CRUD completo de operaciones de usuario</li>    <li>Sección de ayuda</li>"
             values={{
               li: (word) => <li>{word}</li>,
             }}
