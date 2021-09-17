@@ -98,7 +98,7 @@ const CV = () => {
         >
           <FormattedMessage
             id="formation.coursesSubTitle"
-            default="Cursos realizados"
+            defaultMessage="Cursos realizados"
           />
         </Typography>
         <ul className={classes.list}>
@@ -107,7 +107,7 @@ const CV = () => {
               {' '}
               <FormattedMessage
                 id="formation.course1-title"
-                default="Desarrollo con NodeJS"
+                defaultMessage="Desarrollo con NodeJS"
               />
             </span>{' '}
             Universidad Tecnológica Nacional, Facultad Regional de Buenos Aires
@@ -118,7 +118,7 @@ const CV = () => {
               {' '}
               <FormattedMessage
                 id="formation.course2-title"
-                default="Desarrollo con ReactJS"
+                defaultMessage="Desarrollo con ReactJS"
               />
             </span>{' '}
             Universidad Tecnológica Nacional, Facultad Regional de Buenos Aires
@@ -128,7 +128,7 @@ const CV = () => {
             <span className={classes.negrita}>
               <FormattedMessage
                 id="formation.course3-title"
-                default="Seminario de Formación de Líderes"
+                defaultMessage="Seminario de Formación de Líderes"
               />{' '}
               (2008-2011).
             </span>{' '}
@@ -138,7 +138,7 @@ const CV = () => {
             <span className={classes.negrita}>
               <FormattedMessage
                 id="formation.course4-title"
-                default="Seminario de Formación de Líderes"
+                defaultMessage="Seminario de Formación de Líderes"
               />{' '}
               (2008-2011).
             </span>{' '}
@@ -148,7 +148,7 @@ const CV = () => {
             <span className={classes.negrita}>
               <FormattedMessage
                 id="formation.course5-title"
-                default="Seminario de Formación de Líderes"
+                defaultMessage="Seminario de Formación de Líderes"
               />{' '}
             </span>{' '}
             Alkemy Labs. 2021
@@ -157,7 +157,7 @@ const CV = () => {
             <span className={classes.negrita}>
               <FormattedMessage
                 id="formation.course6-title"
-                default="Seminario de Formación de Líderes"
+                defaultMessage="Seminario de Formación de Líderes"
               />{' '}
             </span>{' '}
             Agencia de Aprendizaje a lo Largo de la Vida, Codo a codo 4.0 2021

@@ -8,6 +8,9 @@ const LangProvider = ({ children }) => {
   let defaultLocale
   let defaultMessages
   const lang = localStorage.getItem('lang')
+  if (!lang) {
+    localStorage.setItem('lang', 'es-AR')
+  }
   if (lang) {
     defaultLocale = lang
     switch (lang) {

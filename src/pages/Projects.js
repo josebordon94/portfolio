@@ -88,7 +88,7 @@ const Projects = () => {
             <Box boxShadow={3} bgcolor="background.paper" marginY="1rem">
               <img
                 src="img/sn-profile.jpg"
-                alt="Sistema de gestion de aulas"
+                alt="Social network"
                 className={classes.fullPicture}
               />
             </Box>
@@ -97,7 +97,7 @@ const Projects = () => {
             <Box boxShadow={3} bgcolor="background.paper" marginY="1rem">
               <img
                 src="img/sn-post.jpg"
-                alt="Sistema de gestion de aulas"
+                alt="Social network"
                 className={classes.fullPicture}
               />
             </Box>
@@ -106,7 +106,7 @@ const Projects = () => {
             <Box boxShadow={3} bgcolor="background.paper" marginY="1rem">
               <img
                 src="img/sn-new.jpg"
-                alt="Sistema de gestion de aulas"
+                alt="Social network"
                 className={classes.fullPicture}
               />
             </Box>
