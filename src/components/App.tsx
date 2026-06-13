@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import About from './About';
 import Experience from './Experience';
+import Projects from './Projects';
 import Skills from './Skills';
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <Hero t={t} />
         <About t={t} />
         <Experience t={t} />
+        <Projects t={t} />
         <Skills t={t} />
       </main>
       <footer className="py-8 px-6 border-t border-dark-800">
