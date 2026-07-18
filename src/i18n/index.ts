@@ -105,7 +105,7 @@ export const translations = {
           title: "Prode para Empresas",
           subtitle: "Plataforma de predicción deportiva",
           description:
-            "Sistema completo de predicción de resultados para el Mundial FIFA 2026. Los usuarios registran sus pronósticos, compiten en un ranking en tiempo real, y un panel administrativo permite gestionar usuarios, cargar resultados y visualizar estadísticas del sistema. Se desarrolló para personal de un hospital, pero puede adaptarse rápidamente a cualquier organización.",
+            "Sistema completo de predicción de resultados para el Mundial FIFA 2026. Los usuarios registran sus pronósticos, compiten en un ranking en tiempo real, y un panel administrativo permite gestionar usuarios, cargar resultados y visualizar estadísticas del sistema. Creado para el Hospital Garrahan, su arquitectura 100% parametrizable vía panel admin permite desplegarlo en cualquier organización en cuestión de minutos.",
           highlights: [
             "800+ usuarios activos en producción",
             "Autenticación segura con cookies HTTP-only + bcrypt",
@@ -240,7 +240,7 @@ export const translations = {
           title: "World Cup Predictor",
           subtitle: "Sports prediction platform",
           description:
-            "A complete match prediction system for the FIFA World Cup. Users register their predictions, compete in a real-time ranking, and an admin panel enables user management, result entry, and system statistics. It was built for hospital staff but can be adapted to any organization.",
+            "Complete match prediction system for the FIFA World Cup 2026. Users register their forecasts, compete on a real-time leaderboard, and an administrative panel allows for user management, score loading, and system statistics visualization. Built for the Garrahan Hospital in Buenos Aires, its 100% parametrizable architecture via admin panel enables deployment in any organization within minutes.",
           highlights: [
             "800+ active users in production",
             "Secure authentication with HTTP-only cookies + bcrypt",
