@@ -23,7 +23,7 @@ export const translations = {
       education: "Licenciatura en Sistemas de Información",
       university: "Universidad Nacional del Nordeste - 2021",
       languages: "Idiomas",
-      languagesList: "Español (nativo), Inglés (B1+)",
+      languagesList: "Español (nativo), Inglés (B2+)",
     },
     experience: {
       title: "Experiencia",
@@ -68,6 +68,39 @@ export const translations = {
     projects: {
       title: "Proyectos",
       list: [
+        {
+          title: "Incanto App",
+          subtitle: "Gestión integral de academia de canto",
+          description:
+            "Aplicación móvil multiplataforma para la gestión completa de una academia de canto (Fundación Incanto). Alumnos, profesores y administradores interactúan en una misma plataforma: los alumnos reservan turnos de clase y ven anuncios, los profesores consultan sus clases asignadas, y los administradores gestionan usuarios, horarios, publicaciones y pagos desde un panel completo.",
+          highlights: [
+            "App móvil multiplataforma con Ionic 8 + React + Capacitor",
+            "API REST con NestJS, autenticación JWT y WebSockets en tiempo real",
+            "Roles con permisos diferenciados: student, teacher, admin",
+            "Sistema de horarios semanales recurrentes con excepciones y ausencias",
+            "Reserva de turnos individuales y grupales con control de asistencia",
+            "Feed de anuncios con imágenes y editor rich text",
+            "PostgreSQL con TypeORM, datos seed y migraciones",
+            "Publicada en Google Play Store (en progreso)",
+          ],
+          tech: [
+            "Ionic 8",
+            "React",
+            "Capacitor",
+            "NestJS",
+            "TypeScript",
+            "PostgreSQL",
+            "TypeORM",
+            "JWT",
+          ],
+          images: [
+            "/projects-images/incanto/schedules.png",
+            "/projects-images/incanto/home.png",
+            "/projects-images/incanto/config.png",
+          ],
+          links: {},
+          demoLabel: "",
+        },
         {
           title: "Prode para Empresas",
           subtitle: "Plataforma de predicción deportiva",
@@ -125,7 +158,7 @@ export const translations = {
       education: "Bachelor's Degree in Information Systems",
       university: "Universidad Nacional del Nordeste - 2021",
       languages: "Languages",
-      languagesList: "Spanish (native), English (B1+)",
+      languagesList: "Spanish (native), English (B2+)",
     },
     experience: {
       title: "Experience",
@@ -170,6 +203,39 @@ export const translations = {
     projects: {
       title: "Projects",
       list: [
+        {
+          title: "Incanto App",
+          subtitle: "Singing academy management",
+          description:
+            "A cross-platform mobile app for the complete management of a singing academy (Fundación Incanto). Students, teachers, and administrators interact on a single platform: students book class slots and view announcements, teachers check their assigned classes, and admins manage users, schedules, publications, and payments from a full dashboard.",
+          highlights: [
+            "Cross-platform mobile app with Ionic 8 + React + Capacitor",
+            "REST API with NestJS, JWT authentication, and real-time WebSockets",
+            "Role-based permissions: student, teacher, admin",
+            "Recurring weekly schedules with exceptions and absences",
+            "Individual and group class booking with attendance tracking",
+            "Announcement feed with images and rich text editor",
+            "PostgreSQL with TypeORM, seed data, and migrations",
+            "Published on Google Play Store (in progress)",
+          ],
+          tech: [
+            "Ionic 8",
+            "React",
+            "Capacitor",
+            "NestJS",
+            "TypeScript",
+            "PostgreSQL",
+            "TypeORM",
+            "JWT",
+          ],
+          images: [
+            "/projects-images/incanto/schedules.png",
+            "/projects-images/incanto/home.png",
+            "/projects-images/incanto/config.png",
+          ],
+          links: {},
+          demoLabel: "",
+        },
         {
           title: "World Cup Predictor",
           subtitle: "Sports prediction platform",

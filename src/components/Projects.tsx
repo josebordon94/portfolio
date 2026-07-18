@@ -1,3 +1,4 @@
+import Carousel from "./Carousel";
 import type { TranslationKeys } from "../i18n";
 
 interface ProjectsProps {
@@ -19,20 +20,7 @@ export default function Projects({ t }: ProjectsProps) {
               key={index}
               className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start"
             >
-              <div className="flex gap-4 lg:w-1/2 w-full">
-                {project.images.map((image, i) => (
-                  <div
-                    key={i}
-                    className="flex-1 rounded-2xl overflow-hidden border-2 border-dark-800 shadow-xl shadow-primary-500/5"
-                  >
-                    <img
-                      src={image}
-                      alt={`${project.title} screenshot ${i + 1}`}
-                      className="w-full h-auto object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
+              <Carousel images={project.images} alt={project.title} />
               <div className="lg:w-1/2 w-full">
                 <div className="mb-1">
                   <p className="text-primary-400 font-mono text-sm">
